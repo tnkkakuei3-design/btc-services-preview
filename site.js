@@ -30,11 +30,12 @@
     a.textContent = el.dataset.policy === 'privacyUrl' ? 'プライバシーポリシー' : '利用規約';
     el.replaceChildren(a);
   });
-  const dock = document.querySelector('.mobile-dock'), hero = document.querySelector('.hero'), final = document.querySelector('.final-cta');
+  const dock = document.querySelector('.mobile-dock'), hero = document.querySelector('.hero'), final = document.querySelector('.final-cta'), faq = document.querySelector('#faq');
   if (dock && hero && final) {
     let frame = 0;
     function update() {
-      const show = hero.getBoundingClientRect().bottom <= 0 && final.getBoundingClientRect().top >= innerHeight;
+      const readingBoundary = faq || final;
+      const show = hero.getBoundingClientRect().bottom <= 0 && readingBoundary.getBoundingClientRect().top >= innerHeight;
       dock.classList.toggle('is-visible', show);
       dock.inert = !show;
       frame = 0;

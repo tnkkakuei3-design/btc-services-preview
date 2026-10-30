@@ -75,3 +75,9 @@
  .process-heading h2{font-size:26px;line-height:1.65}
 }
 @media(max-width:360px){:root{--vignette-width:112px}.process-heading h2{font-size:24px}.loan-mechanism h2{font-size:23px}}
+
+/* Tablet: keep the short endpoint phrase on a single line. */
+@media (min-width:701px) and (max-width:1050px) {
+  .payment-line { grid-template-columns: minmax(160px,1fr) 2fr minmax(120px,1fr); gap:16px; }
+  .payment-end strong { font-size:20px; white-space:nowrap; }
+}
