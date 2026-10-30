@@ -1,0 +1,187 @@
+/* v5 — Fintertech本体を構成・図解・情報密度の基準とした独自デザイン。 */
+:root{
+ --section:88px;--radius:8px;--panel-radius:12px;--button-radius:999px;
+ --v5-paper:#f4f6f2;--v5-soft:#edf3ef;--v5-rule:#c8d8cd;
+ --v5-shadow:0 8px 24px rgba(20,47,43,.06);
+}
+.reference-page{background:var(--paper)}
+.reference-page h1,.reference-page h2,.reference-page h3{font-weight:750}
+.reference-page .site-header{background:rgba(255,255,255,.98);border-top:0;border-bottom:1px solid #e4eae4}
+.reference-page .header-inner{min-height:88px}
+.reference-page .brand{font-size:20px;letter-spacing:0}
+.reference-page .header-nav{font-weight:700;font-size:13px}
+.reference-page .btn{border-radius:var(--button-radius);background:var(--green);font-size:15px;min-height:56px;padding-inline:29px;box-shadow:0 4px 0 #d8e4db}
+.reference-page .btn:hover{background:#076257}
+.reference-page .btn:after{content:'→';font-size:22px;line-height:1}
+.reference-page .btn-small{font-size:13px;min-height:43px;padding:10px 20px;box-shadow:none}
+.reference-page .hero{grid-template-columns:minmax(0,1.14fr) minmax(0,1fr);gap:52px;padding-block:56px 52px;align-items:center}
+.reference-page .eyebrow{font-size:14px;letter-spacing:.04em;margin-bottom:19px}
+.reference-page h1{font-size:clamp(38px,4.3vw,56px);line-height:1.42;letter-spacing:.005em}
+.reference-page .hero-lead{font-size:16px;line-height:1.95;margin-top:20px;max-width:540px;text-wrap:pretty}
+.reference-page .hero-lead>span{display:block}
+.reference-page .hero-terms{background:white;border:1px solid var(--v5-rule);border-radius:var(--panel-radius);padding:20px 24px;gap:16px 24px;margin-block:25px 14px}
+.reference-page .hero-terms .rate-term{border-bottom:1px solid var(--line);padding-bottom:12px;gap:20px}
+.reference-page .hero-terms .rate-term dd{font-size:46px;color:var(--green);letter-spacing:0}
+.reference-page .hero-terms dt{color:var(--ink);font-size:13px}
+.reference-page .hero-terms dd{font-size:27px;color:var(--green)}
+.reference-page .contract-note{font-size:13px;margin-bottom:16px}
+.reference-page .hero-cta{width:auto;min-width:340px}
+.reference-page .hero-note{font-size:12px;margin-top:10px}
+.reference-page .hero-risk{font-size:13px;margin-top:14px;max-width:510px}
+.reference-page .primary-visual img{aspect-ratio:4/3;height:auto;width:100%;object-fit:contain;object-position:center;mix-blend-mode:normal}
+.reference-page .primary-visual figcaption{border:0;padding:0;text-align:center;font-size:12px;color:var(--muted);margin-top:16px}
+.reference-page .section-kicker{font-size:13px;font-weight:700;color:var(--green);letter-spacing:.06em;line-height:1.7;margin:0 0 10px}
+.reference-page .central-section-heading{text-align:center;max-width:850px;margin:0 auto 38px}
+.reference-page .central-section-heading h2{font-size:30px;line-height:1.6;letter-spacing:.035em;text-wrap:balance}
+.reference-page .central-section-heading>p:not(.section-kicker){margin-top:15px;font-size:16px;color:var(--muted)}
+.reference-page .feature-section{background:white;border-top:8px solid var(--green);padding:72px 0 76px}
+.reference-page .feature-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.reference-page .feature-tile{position:relative;background:var(--paper);border:1px solid var(--v5-rule);border-radius:var(--panel-radius);padding:30px 26px 26px}
+.reference-page .feature-no{display:block;font-size:14px;color:var(--green);font-weight:700;letter-spacing:.05em;margin-bottom:20px}
+.reference-page .feature-mark{display:flex;justify-content:center;align-items:baseline;gap:6px;height:80px;font-size:49px;line-height:1.35;font-weight:750;color:var(--emerald);letter-spacing:0}
+.reference-page .feature-mark small{font-size:20px;font-weight:700}
+.reference-page .feature-mark-words{display:block;text-align:center;font-size:19px;line-height:1.5}
+.reference-page .feature-mark-words span{display:block;font-size:29px}
+.reference-page .feature-tile h3{font-size:18px;text-align:center;margin:12px 0 14px;letter-spacing:0}
+.reference-page .feature-tile p{font-size:16px;line-height:1.85;text-wrap:pretty}
+.reference-page .feature-tile .note{font-size:13px;margin-top:13px;padding-top:13px;border-top:1px solid var(--v5-rule)}
+.reference-page .loan-mechanism{border:0;padding-block:82px}
+.reference-page .loan-mechanism h2{margin-bottom:0}
+.reference-page .loan-mechanism-layout{display:block}
+.reference-page .loan-mechanism .flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:52px}
+.reference-page .loan-mechanism .flow-step{border:0;padding:0;margin:0;position:relative;text-align:center}
+.reference-page .loan-mechanism .flow-step:before{content:none}
+.reference-page .loan-mechanism .flow-step:not(:last-child):after{content:'→';position:absolute;right:-36px;top:53px;font-size:27px;color:var(--emerald)}
+.reference-page .flow-illustration{height:118px;max-width:170px;margin:0 auto 16px;color:var(--green)}
+.reference-page .flow-illustration svg{width:100%;height:100%}
+.reference-page .flow-number{display:block;font-size:13px;color:var(--green);font-weight:700;margin-bottom:7px;letter-spacing:.08em}
+.reference-page .loan-mechanism .flow-step h3{font-size:19px;line-height:1.65;margin-bottom:12px}
+.reference-page .loan-mechanism .flow-step p{font-size:16px;text-align:left;line-height:1.85}
+.reference-page .mechanism-description>.note{text-align:center;font-size:13px;margin-top:28px}
+.reference-page .loan-mechanism .loan-map{display:grid;grid-template-columns:1fr 1fr;gap:20px 50px;margin:38px auto 0;max-width:900px;background:white;border:1px solid var(--line);border-radius:var(--panel-radius);padding:30px 38px;box-shadow:var(--v5-shadow)}
+.reference-page .map-title{grid-column:1/-1;text-align:center;margin:0;font-size:16px}
+.reference-page .map-value{display:block;text-align:center;grid-row:2}
+.reference-page .map-value strong{display:block;font-size:31px;line-height:1.6;margin-top:5px}
+.reference-page .map-value.loan-limit strong{font-size:36px}
+.reference-page .valuation-track{grid-column:1/-1;grid-row:3;width:min(100%,520px);margin:0 auto;height:14px;border-radius:7px;overflow:hidden}
+.reference-page .loan-map .note{grid-column:1/-1;text-align:center;margin:0}
+.reference-page .repayment-section{background:white;border:0}
+.reference-page .repayment-head{gap:60px;align-items:center;margin-bottom:40px}
+.reference-page .repayment-head h2{font-size:33px}
+.reference-page .repayment-head>p{font-size:16px;line-height:1.95}
+.reference-page .payment-line{background:var(--paper);border-bottom:2px solid var(--green);border-radius:10px 10px 0 0;padding:28px 26px;gap:20px;grid-template-columns:minmax(170px,1fr) 2fr minmax(130px,1fr)}
+.reference-page .payment-end strong{font-size:21px;white-space:nowrap}
+.reference-page .payment-period{background:transparent;padding:0 8px}
+.reference-page .payment-period strong{font-size:17px;color:var(--green)}
+.reference-page .repayment-options{gap:60px}
+.reference-page .repayment-option h3{font-size:21px}
+.reference-page .currency-label{border-radius:50%;border-color:var(--v5-rule);color:var(--green);background:var(--v5-soft);font-weight:700}
+.reference-page .repayment-note{background:var(--paper);border:0;padding:16px 20px;border-radius:6px;font-size:13px}
+.reference-page .calculator-section{background:#e7eee9;border-block:1px solid var(--line)}
+.reference-page .calculator-heading{display:block;text-align:center;margin-bottom:34px}
+.reference-page .calculator-heading h2{font-size:31px}
+.reference-page .calculator-heading>p{margin-top:14px}
+.reference-page .calculator-wrap{background:white;border:1px solid var(--v5-rule);border-radius:var(--panel-radius);box-shadow:var(--v5-shadow);overflow:hidden}
+.reference-page .calc-form{padding:38px 42px}
+.reference-page .input-wrap{border-radius:7px;background:var(--paper)}
+.reference-page .input-wrap input{background:transparent}
+.reference-page .calc-results{background:var(--green);padding:38px 42px}
+.reference-page .calc-results .eyebrow{font-size:14px;color:white}
+.reference-page .calculator-footnote{font-size:13px;max-width:980px;margin-inline:auto}
+.reference-page .inline-cta{justify-content:center;gap:32px;padding-top:26px}
+.reference-page .inline-cta p{font-size:14px}
+.reference-page .information-grid{grid-template-columns:280px minmax(0,1fr);gap:65px}
+.reference-page #terms,.reference-page #conditions{padding-block:80px}
+.reference-page .terms-list{border:1px solid var(--v5-rule);background:white;border-radius:8px;overflow:hidden}
+.reference-page .terms-list>div{grid-template-columns:170px minmax(0,1fr);gap:0;padding:0;border-bottom:1px solid #dde5de}
+.reference-page .terms-list>div:last-child{border-bottom:0}
+.reference-page .terms-list dt{padding:18px 22px;background:var(--v5-soft);font-size:14px;color:var(--ink)}
+.reference-page .terms-list dd{padding:18px 24px;font-size:16px}
+.reference-page .risk-strip{background:transparent;border-left:3px solid var(--emerald);padding:8px 0 8px 18px;margin-top:28px}
+.reference-page .process-section{padding-block:74px;border-top:1px solid var(--line)}
+.reference-page .process-list{gap:0;border:1px solid var(--v5-rule);background:white;border-radius:var(--panel-radius);padding:30px 18px;counter-reset:process}
+.reference-page .process-list li{position:relative;border:0;padding:0 22px}
+.reference-page .process-list li+li{border-left:1px solid var(--line)}
+.reference-page .process-list li:before{display:block;font-size:13px;font-weight:700;color:var(--green);position:static;margin:0 0 14px}
+.reference-page .process-list li:not(:last-child):after{content:'→';position:absolute;right:-11px;top:73px;background:white;color:var(--emerald);font-size:24px;z-index:1;line-height:1}
+.reference-page .process-icon{display:block;width:82px;height:70px;color:var(--green);margin-bottom:20px}
+.reference-page .process-list h3{font-size:17px;margin-bottom:10px}
+.reference-page .process-list p{font-size:15px;line-height:1.85;text-wrap:pretty}
+.reference-page .process-list+.note{margin-top:20px;text-align:center;font-size:13px}
+.reference-page .faq-section{padding-block:80px;border-top:1px solid var(--line)}
+.reference-page .faq-list{background:white;border-radius:8px;border:1px solid var(--line);padding-inline:24px}
+.reference-page .faq-list details:last-child{border-bottom:0}
+.reference-page .faq-list summary{padding-left:29px;font-size:16px;line-height:1.8}
+.reference-page .faq-list summary:before{content:'Q';position:absolute;left:0;top:22px;color:var(--green);font-weight:750}
+.reference-page .faq-list details p{font-size:16px;padding-left:29px}
+.reference-page .final-cta{background:var(--green);padding-block:62px}
+.reference-page .final-inner{display:block;text-align:center}
+.reference-page .final-cta h2{font-size:31px}
+.reference-page .final-cta p{font-size:16px;margin-top:16px;line-height:1.9}
+.reference-page .final-action{margin-top:27px;min-width:0}
+.reference-page .final-cta .btn{min-width:390px;background:white;color:var(--green);box-shadow:none;border-color:white}
+.reference-page .final-cta .note{margin-top:13px;font-size:12px}
+.reference-page .site-footer{background:white;padding-block:44px 30px}
+.reference-page .footer-bottom{padding-top:22px}
+.reference-page .proposal-label{border:1px solid var(--v5-rule);background:white;font-size:12px;padding:5px 12px;margin-bottom:17px}
+.reference-page .proposal-terms{background:white;border:1px solid var(--v5-rule);border-radius:var(--panel-radius);padding:18px 24px;margin-block:24px 14px;gap:18px 24px}
+.reference-page .proposal-terms dt{font-size:13px;color:var(--ink)}
+.reference-page .proposal-terms dd{font-size:29px;color:var(--green)}
+.reference-page .proposal-terms .pending-rate{border-top:1px solid var(--line);padding-top:13px;gap:20px}
+.reference-page .proposal-terms .pending-rate dd{font-size:20px}
+.reference-page .lending-mechanism{background:var(--paper);border:0}
+.reference-page .lending-mechanism .lending-journey{padding:32px;background:white;border:1px solid var(--v5-rule);border-radius:var(--panel-radius)}
+.reference-page .lending-mechanism-heading{display:block;text-align:center;max-width:800px;margin-inline:auto}
+.reference-page .lending-mechanism-heading p{margin-top:14px}
+.reference-page .lending-risk-section{background:white;border:0}
+.reference-page .lending-risk-section .risk-grid{border-top:1px solid var(--line);padding-top:30px}
+.reference-page .risk-item .risk-label{color:var(--green)}
+.reference-page .feature-tile .feature-mark[data-lend]{font-size:32px;padding-top:10px;white-space:normal}
+@media (min-width:1051px){.reference-page .site-header{position:sticky;top:0;z-index:25}html{scroll-padding-top:112px}}
+@media(max-width:1050px){
+ .reference-page .hero{gap:30px;padding-block:44px}.reference-page h1{font-size:43px}.reference-page .hero-cta{min-width:0;width:100%}
+ .reference-page .header-inner{gap:22px}.reference-page .brand{font-size:18px}.reference-page .header-nav{gap:17px}.reference-page .btn-small{padding-inline:15px}
+ .reference-page .hero-terms{padding:19px 20px;gap:12px 18px}.reference-page .hero-terms dd{font-size:23px}.reference-page .hero-terms dd small{font-size:12px}
+ .reference-page .feature-columns{gap:18px}.reference-page .feature-tile{padding:23px 20px}.reference-page .feature-tile h3{font-size:17px}.reference-page .feature-mark{font-size:42px}.reference-page .feature-mark-words{font-size:18px}.reference-page .feature-mark-words span{font-size:25px}
+ .reference-page .loan-mechanism .flow{gap:35px}.reference-page .loan-mechanism .flow-step:not(:last-child):after{right:-26px}.reference-page .loan-mechanism .flow-step h3{font-size:17px}
+ .reference-page .payment-line{padding:25px 18px;grid-template-columns:minmax(160px,1fr) 2fr minmax(120px,1fr);gap:14px}.reference-page .payment-end strong{font-size:20px}.reference-page .payment-period strong{font-size:16px}
+ .reference-page .calc-form,.reference-page .calc-results{padding:30px}.reference-page .information-grid{grid-template-columns:210px minmax(0,1fr);gap:40px}
+ .reference-page .terms-list>div{grid-template-columns:130px minmax(0,1fr)}.reference-page .terms-list dt{padding:16px}.reference-page .terms-list dd{padding:16px 18px}
+ .reference-page .process-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 0}.reference-page .process-list li:nth-child(3){border-left:0}.reference-page .process-list li:nth-child(2):after{display:none}
+ .reference-page .proposal-terms{padding:19px 20px}.reference-page .proposal-terms dd{font-size:25px}
+}
+@media(max-width:800px){
+ .reference-page .hero{grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr);gap:20px}.reference-page h1{font-size:37px}.reference-page .eyebrow{font-size:12px}
+ .reference-page .hero-terms .rate-term dd{font-size:38px}.reference-page .hero-terms dd{font-size:21px}.reference-page .hero-lead>span{display:inline}
+ .reference-page .feature-tile{padding-inline:17px}.reference-page .feature-tile h3{text-align:left}.reference-page .feature-mark{font-size:39px}.reference-page .feature-mark-words{font-size:18px}.reference-page .feature-mark-words span{font-size:23px}
+ .reference-page .information-grid{grid-template-columns:1fr;gap:26px}.reference-page .information-heading p{max-width:none}.reference-page .terms-list>div{grid-template-columns:180px minmax(0,1fr)}
+ .reference-page .loan-mechanism .loan-map{padding:28px}.reference-page .lending-mechanism .lending-journey{padding:28px;gap:24px}
+ .reference-page .central-section-heading h2{font-size:28px}.reference-page .repayment-head{gap:32px}.reference-page .repayment-head h2{font-size:29px}
+}
+@media(max-width:700px){
+ :root{--gutter:20px;--section:58px;--panel-radius:9px}
+ .reference-page .header-inner{min-height:0;padding-top:13px;gap:0}.reference-page .brand{font-size:17px}.reference-page .brand small{font-size:11px;margin-left:6px}.reference-page .header-nav{font-size:12px;gap:25px;margin-top:8px}.reference-page .btn-small{font-size:11px;min-height:34px;padding:7px 12px;gap:8px}.reference-page .btn-small:after{font-size:18px}
+ .reference-page .hero{display:grid;grid-template-columns:1fr;gap:24px;padding:33px 0 36px}.reference-page h1{font-size:34px;line-height:1.45;letter-spacing:0}
+ .reference-page .eyebrow{font-size:12px;margin-bottom:14px}.reference-page .hero-lead{font-size:16px;line-height:1.85;margin-top:18px}.reference-page .hero-lead>span{display:inline}
+ .reference-page .hero-terms{padding:17px 19px;margin:23px 0 13px;gap:13px 18px}.reference-page .hero-terms .rate-term{gap:21px;padding-bottom:13px}.reference-page .hero-terms .rate-term dd{font-size:39px}.reference-page .hero-terms .rate-term dd small{font-size:21px}.reference-page .hero-terms dt{font-size:12px}.reference-page .hero-terms dd{font-size:25px}.reference-page .hero-terms dd small{font-size:12px}
+ .reference-page .contract-note{font-size:12px;margin-bottom:17px}.reference-page .btn{font-size:15px;min-height:56px;padding:15px 18px;gap:18px}.reference-page .btn-small{font-size:11px;min-height:34px;padding:7px 12px;gap:8px}
+ .reference-page .hero-note{font-size:12px}.reference-page .hero-risk{font-size:13px;margin-top:14px}.reference-page .primary-visual{max-width:330px;margin:auto}.reference-page .primary-visual img{height:206px;aspect-ratio:4/3;object-fit:contain}.reference-page .primary-visual figcaption{margin-top:5px;font-size:12px}
+ .reference-page .central-section-heading{margin-bottom:27px;text-align:left}.reference-page .central-section-heading h2{font-size:25px;line-height:1.65;letter-spacing:0;text-wrap:pretty}.reference-page .central-section-heading>p:not(.section-kicker){font-size:16px;margin-top:12px}.reference-page .section-kicker{font-size:12px;margin-bottom:10px}
+ .reference-page .feature-section{padding-block:48px;border-top-width:6px}.reference-page .feature-columns{grid-template-columns:1fr;gap:0;border:1px solid var(--v5-rule);border-radius:var(--panel-radius);background:var(--paper);overflow:hidden}
+ .reference-page .feature-tile{display:grid;grid-template-columns:92px minmax(0,1fr);column-gap:20px;padding:25px 20px;border:0;border-radius:0;background:transparent}.reference-page .feature-tile+.feature-tile{border-top:1px solid var(--v5-rule)}
+ .reference-page .feature-no{grid-column:1;grid-row:1;margin:0;font-size:12px}.reference-page .feature-mark{grid-column:1;grid-row:2/5;justify-content:flex-start;align-items:baseline;align-content:center;flex-wrap:wrap;font-size:39px;line-height:1.2;height:auto;gap:2px;margin-top:9px}.reference-page .feature-mark small{font-size:16px;display:block}.reference-page .feature-mark-words{display:block;text-align:left;font-size:16px;line-height:1.5}.reference-page .feature-mark-words span{font-size:18px}
+ .reference-page .feature-tile h3{grid-column:2;grid-row:1/3;text-align:left;font-size:17px;line-height:1.65;margin:0 0 11px}.reference-page .feature-tile p{grid-column:2;font-size:16px;line-height:1.8}.reference-page .feature-tile .note{grid-column:1/-1;font-size:12px;margin-top:14px;padding-top:13px}
+ .reference-page .loan-mechanism{padding-block:52px}.reference-page .loan-mechanism .flow{display:block}.reference-page .loan-mechanism .flow-step{display:grid;grid-template-columns:94px minmax(0,1fr);column-gap:20px;text-align:left;padding:0 0 30px;margin-bottom:26px;border-bottom:1px solid var(--line)}.reference-page .loan-mechanism .flow-step:last-child{border:0;margin:0;padding:0}
+ .reference-page .flow-illustration{grid-column:1;grid-row:1/4;width:94px;height:90px;margin:0;align-self:center}.reference-page .flow-number{grid-column:2;font-size:12px;margin-bottom:5px}.reference-page .loan-mechanism .flow-step h3{grid-column:2;font-size:17px;margin-bottom:9px}.reference-page .loan-mechanism .flow-step p{grid-column:2;font-size:16px}.reference-page .loan-mechanism .flow-step:not(:last-child):after{content:'↓';right:auto;left:41px;top:auto;bottom:-15px;font-size:23px;background:var(--paper);padding-inline:7px;line-height:1.2}.reference-page .mechanism-description>.note{text-align:left;font-size:12px;margin-top:25px}
+ .reference-page .loan-mechanism .loan-map{gap:17px 20px;padding:24px 20px;margin-top:26px}.reference-page .map-title{font-size:14px}.reference-page .map-value>span{font-size:12px}.reference-page .map-value strong{font-size:25px}.reference-page .map-value.loan-limit strong{font-size:30px}.reference-page .map-value strong small{font-size:12px;margin-left:3px}.reference-page .loan-map .note{font-size:12px;text-align:left}
+ .reference-page .repayment-head{display:block;margin-bottom:25px}.reference-page .repayment-head h2{font-size:28px;line-height:1.6}.reference-page .repayment-head>p{font-size:16px;margin-top:19px;line-height:1.85}.reference-page .payment-line{grid-template-columns:1fr 1fr;gap:22px 14px;padding:20px 17px;margin-bottom:30px}.reference-page .payment-period{grid-column:1/-1;grid-row:1;padding:0 0 18px;border-bottom:1px solid var(--line);font-size:12px}.reference-page .payment-period strong{font-size:16px}.reference-page .payment-end{font-size:12px}.reference-page .payment-end strong{font-size:17px;white-space:normal}.reference-page .repayment-options{gap:26px}.reference-page .repayment-option h3{font-size:19px}.reference-page .repayment-note{font-size:12px;padding:15px 17px}
+ .reference-page .calculator-heading{text-align:left;margin-bottom:25px}.reference-page .calculator-heading h2{font-size:26px}.reference-page .calculator-heading>p{font-size:13px;margin-top:12px}.reference-page .calc-form,.reference-page .calc-results{padding:24px}.reference-page .calculator-footnote{font-size:12px}.reference-page .inline-cta{padding-top:0;margin-top:25px}.reference-page .inline-cta .btn{width:100%}
+ .reference-page #terms,.reference-page #conditions{padding-block:52px}.reference-page .information-grid{display:block}.reference-page .information-heading{margin-bottom:25px}.reference-page .information-heading h2{font-size:26px}.reference-page .information-heading p:not(.section-kicker){font-size:14px;margin-top:12px}.reference-page .terms-list>div{grid-template-columns:104px minmax(0,1fr)}.reference-page .terms-list dt{font-size:12px;padding:16px 12px}.reference-page .terms-list dd{font-size:16px;padding:16px 15px}.reference-page .terms-list .note{font-size:12px}.reference-page .risk-strip{margin-top:24px}
+ .reference-page .process-section{padding-block:52px}.reference-page .process-list{display:block;padding:0 21px}.reference-page .process-list li{display:grid;grid-template-columns:60px minmax(0,1fr);gap:0 20px;padding:25px 0}.reference-page .process-list li+li{border-left:0;border-top:1px solid var(--line)}.reference-page .process-list li:before{grid-column:1;grid-row:1;margin:0 0 8px;font-size:12px}.reference-page .process-icon{grid-column:1;grid-row:2/4;width:60px;height:56px;margin:0}.reference-page .process-list h3{grid-column:2;grid-row:1/3;font-size:17px;margin:0 0 9px}.reference-page .process-list p{grid-column:2;grid-row:3;font-size:16px}.reference-page .process-list li:not(:last-child):after{content:none}.reference-page .process-list+.note{text-align:left;font-size:12px;margin-top:18px}
+ .reference-page .faq-section{padding-block:52px}.reference-page .faq-list{padding-inline:18px}.reference-page .faq-list summary{font-size:16px;padding:19px 24px 19px 26px}.reference-page .faq-list summary:before{top:19px}.reference-page .faq-list details p{padding:0 0 20px 26px;font-size:16px}
+ .reference-page .final-cta{padding-block:43px}.reference-page .final-cta h2{font-size:25px}.reference-page .final-cta p{font-size:15px;margin-top:14px}.reference-page .final-cta .btn{width:100%;min-width:0}.reference-page .final-action{margin-top:24px}.reference-page .site-footer{padding-block:31px 24px}.reference-page .mobile-dock{padding:9px 18px calc(9px + env(safe-area-inset-bottom))}.reference-page .mobile-dock .btn{width:100%;box-shadow:none;min-height:50px;font-size:14px}
+ .reference-page .proposal-terms{padding:18px 20px;gap:14px 21px;margin-top:22px}.reference-page .proposal-terms dd{font-size:26px}.reference-page .proposal-terms .pending-rate{padding-top:13px}.reference-page .proposal-label{margin-bottom:15px}.reference-page .lending-mechanism .lending-journey{padding:25px 23px}.reference-page .lending-mechanism .journey-node p{font-size:16px}.reference-page .lending-mechanism .lending-journey>.note{font-size:12px}.reference-page .lending-risk-section .risk-grid{padding-top:22px}.reference-page .feature-tile .feature-mark[data-lend]{font-size:25px;line-height:1.4;padding-top:0;word-break:normal}
+}
+@media(max-width:374px){.reference-page h1{font-size:31px}.reference-page .brand{font-size:15px}.reference-page .feature-tile{grid-template-columns:83px minmax(0,1fr);gap:0 15px}.reference-page .hero-terms dd{font-size:23px}.reference-page .hero-terms .rate-term dd{font-size:36px}.reference-page .terms-list>div{grid-template-columns:96px minmax(0,1fr)}}
+
+.reference-page .hero-calculator-link{display:inline-flex;gap:12px;align-items:center;font-size:16px;color:var(--green);font-weight:700;margin-top:16px;text-underline-offset:5px}

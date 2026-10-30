@@ -30,6 +30,19 @@
     a.textContent = el.dataset.policy === 'privacyUrl' ? 'プライバシーポリシー' : '利用規約';
     el.replaceChildren(a);
   });
+
+  // The four procedure illustrations are fixed SVG assets; terms remain in each service config.
+  const processDrawings = [
+    '<path d="M12 16h58v35H41L25 64V51H12z" fill="#edf3ef" stroke="currentColor" stroke-width="2"/><path d="M24 28h34M24 38h24" stroke="currentColor" stroke-width="2"/>',
+    '<path d="M12 24h24l8-9h25v48H12z" fill="#edf3ef" stroke="currentColor" stroke-width="2"/><path d="M24 33h32M24 43h25M24 53h18" stroke="currentColor" stroke-width="2"/>',
+    '<path d="M18 11h40v52H18z" fill="white" stroke="currentColor" stroke-width="2"/><path d="M27 23h21M27 33h16M27 53h20" stroke="currentColor" stroke-width="2"/><path d="M45 49l21-27 7 6-21 27-11 5z" fill="#dfbc75" stroke="currentColor" stroke-width="2"/>',
+    '<circle cx="41" cy="36" r="23" fill="#edf3ef" stroke="currentColor" stroke-width="2"/><path d="M30 36l8 9 15-19" fill="none" stroke="#008f83" stroke-width="3"/><path d="M18 66h47" stroke="#c8d8cd" stroke-width="2"/>'
+  ];
+  document.querySelectorAll('.reference-page .process-list li').forEach((li, index) => {
+    const drawing = processDrawings[index];
+    if (!drawing) return;
+    li.insertAdjacentHTML('afterbegin', '<svg class="process-icon" viewBox="0 0 82 76" aria-hidden="true">' + drawing + '</svg>');
+  });
   const dock = document.querySelector('.mobile-dock'), hero = document.querySelector('.hero'), final = document.querySelector('.final-cta'), faq = document.querySelector('#faq');
   if (dock && hero && final) {
     let frame = 0;
