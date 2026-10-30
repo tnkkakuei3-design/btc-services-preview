@@ -193,3 +193,7 @@
  .reference-page .feature-icon svg{width:74px;height:72px;margin:0}
  .reference-page .feature-mark-words,.reference-page .feature-mark small{color:var(--green)}
 }
+
+/* 最終CTAはPCでも適切な操作幅に抑える。 */
+.reference-page .final-cta .btn{width:min(100%,420px);min-width:0}
+@media(min-width:1051px){.reference-page .hero-calculator-link{margin-left:12px}}
