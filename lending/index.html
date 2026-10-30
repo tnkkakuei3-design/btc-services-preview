@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="BTCを貸し出し、BTC建ての利息を受け取るレンディング。仕組みと検討中の貸出条件、リスクをご案内する制作プレビューです。">
+  <title>BTCレンディング｜貸出条件のご案内</title>
+  <link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../visuals.css">
+  <script src="../site-config.js" defer></script>
+  <script src="config.js" defer></script>
+  <script src="lending.js" defer></script>
+  <script src="../site.js" defer></script>
+</head>
+<body class="lending-page">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="BTCレンディング ページの先頭へ"><span data-lend="serviceName">BTCレンディング</span><small data-lend="serviceNameNote">仮称</small></a>
+      <nav class="header-nav" aria-label="ページ内の案内">
+        <a href="#mechanism">仕組み</a>
+        <a href="#conditions">貸出条件</a>
+        <a href="#faq">よくある質問</a>
+      </nav>
+      <a class="btn btn-small header-cta" data-line role="link" aria-disabled="true" tabindex="0">LINEで条件確認</a>
+    </div>
+  </header>
+
+<main id="main">
+<section class="hero container" aria-labelledby="hero-title">
+ <div class="hero-copy">
+  <p class="proposal-label" data-lend="proposalStatus">制作上の提案条件</p>
+  <h1 id="hero-title"><span>BTCを貸し出し、</span><span>利息もBTCで。</span></h1>
+  <p class="hero-lead">保有するBTCを事業者に貸し出すレンディング。年利に加え、貸出期間と返還条件をご確認ください。</p>
+  <dl class="proposal-terms">
+   <div><dt>最低貸出数量（案）</dt><dd data-lend="minimum">0.1 BTC</dd></div>
+   <div><dt>貸出期間（案）</dt><dd data-lend="term">12か月</dd></div>
+   <div class="pending-rate"><dt>年利</dt><dd data-lend="annualRate">未確定</dd></div>
+  </dl>
+  <p class="contract-note" data-lend="proposalExplanation">以下は制作上の提案です。正式な商品条件ではありません。</p>
+  <a class="btn hero-cta" data-line role="link" aria-disabled="true" tabindex="0">LINEで貸出条件を確認する</a>
+  <p class="hero-note" data-line-note>プレビュー：LINEへの移動は無効です。</p>
+  <p class="hero-risk" data-lend="riskText">元本保証はありません。BTCの価格変動リスクと、事業者の信用リスクがあります。</p>
+ </div>
+ <div class="hero-aside visual-hero-aside">
+  <figure class="primary-visual lending-primary-visual">
+   <img src="../assets/lending-editorial-v4.webp" srcset="../assets/lending-editorial-v4-small.webp 768w, ../assets/lending-editorial-v4.webp 1440w" sizes="(max-width:700px) calc(100vw - 40px), (max-width:1184px) 44vw, 484px" width="1440" height="1080" alt="BTCモチーフ、契約書類、貸出期間を表すカレンダーのイラスト" fetchpriority="high">
+   <figcaption>BTCの貸出と契約期間を表すイメージ</figcaption>
+  </figure>
+ </div>
+</section>
+<section class="section lending-mechanism" id="mechanism"><div class="container">
+ <div class="lending-mechanism-heading"><h2>BTCの貸出と返還</h2><p>貸出期間と、利息・BTCを受け取る時期を契約前にご確認ください。</p></div>
+ <figure class="lending-journey" aria-labelledby="journey-title">
+   <figcaption class="journey-title" id="journey-title">貸出と返還の流れ〈条件案〉</figcaption>
+   <div class="journey-node"><span>契約後</span><strong>BTCを貸し出す</strong><p>契約に沿って手続き</p></div>
+   <div class="journey-period"><span>貸出期間</span><strong data-lend="term">12か月</strong><p><span data-lend="interestMethod">BTC建て・単利</span><br>中途解約は<span data-lend="earlyTermination">中途解約は原則不可</span></p></div>
+   <div class="journey-node"><span>返還・利息の受け取り</span><strong>BTCで受け取る</strong><p data-lend="maturityDescription">元本は満期にBTCで返還。利息は満期に一括支払いの条件案です。</p></div>
+   <p class="note">制作上の提案条件を図示しています。返還や利息の支払いを保証するものではありません。</p>
+  </figure>
+</div></section>
+<section class="section lending-risk-section"><div class="container">
+ <div class="section-heading"><h2>貸出前に確認すること</h2></div>
+ <div class="risk-grid">
+  <article class="risk-item"><span class="risk-label">資産価値</span><h3>BTCの価格変動</h3><p>BTCで利息を受け取っても、円換算した資産価値が増えるとは限りません。</p></article>
+  <article class="risk-item"><span class="risk-label">返還・支払い</span><h3>事業者の信用リスク</h3><p>BTCの返還や利息の支払いが滞るリスクがあります。元本は保証されません。</p></article>
+  <article class="risk-item"><span class="risk-label">資金計画</span><h3>貸出期間中の利用</h3><p data-lend="liquidityDescription">中途解約は原則不可とする提案です。BTCを使う予定と貸出期間を照らし合わせてください。</p></article>
+ </div>
+</div></section>
+<section class="section container" id="conditions"><div class="information-grid">
+ <div class="information-heading"><h2>貸出条件</h2><p data-lend="proposalExplanation">以下は制作上の提案です。正式な商品条件ではありません。</p></div>
+ <div><dl class="terms-list">
+  <div><dt>対象資産</dt><dd data-lend="assetWithName">ビットコイン（BTC）</dd></div>
+  <div><dt>最低貸出数量</dt><dd data-lend="minimum">0.1 BTC</dd></div>
+  <div><dt>貸出期間</dt><dd data-lend="term">12か月</dd></div>
+  <div><dt>年利</dt><dd data-lend="annualRate">未確定</dd></div>
+  <div><dt>利息の計算</dt><dd data-lend="interestMethod">BTC建て・単利</dd></div>
+  <div><dt>利息の受け取り</dt><dd data-lend="interestPayment">満期に一括支払い</dd></div>
+  <div><dt>貸出BTCの返還</dt><dd data-lend="principalReturn">満期にBTCで返還</dd></div>
+  <div><dt>中途解約</dt><dd data-lend="earlyTermination">原則不可</dd></div>
+ </dl><p class="note proposal-description" data-lend="unresolvedItems">手数料、計算日数・端数処理、返還手順は未確定です。</p></div>
+</div><div class="inline-cta"><p>適用条件・リスク・返還方法を、契約前にご確認ください。</p><a class="btn" data-line role="link" aria-disabled="true" tabindex="0">LINEで貸出条件を確認する</a></div></section>
+<section class="section process-section container" id="process">
+ <div class="section-heading process-heading"><h2><span class="phrase">LINEから</span><span class="phrase">貸出まで</span></h2>
+  <figure class="process-vignette"><img src="../assets/conditions-editorial-v4-small.webp" width="768" height="576" alt="" loading="lazy" decoding="async"></figure>
+ </div>
+ <ol class="process-list"></ol>
+ <p class="note" data-lend="processNote">手続きの案内案です。必要書類と実際の手順は、正式条件とあわせて確認が必要です。</p>
+</section>
+<section class="section faq-section container" id="faq"><div class="information-grid">
+ <div class="information-heading"><h2>よくある質問</h2></div>
+ <div class="faq-list">
+  <details><summary>利息はいくら受け取れますか？</summary><p data-lend="faqRate">年利が未確定のため、受取額は提示していません。実際の年利と計算方法は、正式な契約条件をご確認ください。</p></details>
+  <details><summary>途中でBTCが必要になった場合は？</summary><p data-lend="faqCancellation">中途解約は原則不可とする提案です。例外の有無や適用条件は未確定です。</p></details>
+  <details><summary>貸したBTCは必ず返還されますか？</summary><p>返還は保証されません。事業者の破綻や返還遅延時の扱いは、契約前に確認が必要です。</p></details>
+  <details><summary>LINEを追加すると契約になりますか？</summary><p>追加だけでは契約は成立しません。貸出条件と契約内容を確認してから手続きを進めます。</p></details>
+ </div>
+</div></section>
+<section class="final-cta"><div class="container final-inner">
+ <div><h2>LINEで貸出条件を確認</h2><p>数量、期間、返還方法についてご確認ください。<br>掲載条件は制作上の提案です。</p></div>
+ <div class="final-action"><a class="btn" data-line role="link" aria-disabled="true" tabindex="0">LINEで貸出条件を確認する</a><p class="note" data-line-note>プレビュー：LINEへの移動は無効です。</p></div>
+</div></section>
+</main>  <footer class="site-footer"><div class="container">
+    <p class="footer-title">運営情報</p>
+    <p class="note">制作プレビューです。正式名称・運営情報は、提供後に差し替えます。</p>
+    <dl class="operator-info">
+      <div><dt>運営会社</dt><dd data-operator="company">未提供（差し替え予定）</dd></div>
+      <div><dt>連絡先</dt><dd data-operator="contact">未提供（差し替え予定）</dd></div>
+      <div><dt>該当する登録情報</dt><dd data-operator="registration">未提供（差し替え予定）</dd></div>
+    </dl>
+    <div class="footer-links"><span data-policy="privacyUrl">プライバシーポリシー：未提供</span><span data-policy="termsUrl">利用規約：未提供</span><a href="../loan/">BTC担保ローンのページ</a></div>
+    <div class="footer-bottom"><span>制作プレビュー／正式サービス公開前</span><a class="back-top" href="#top">ページ上部へ ↑</a></div>
+  </div></footer>
+  <div class="mobile-dock" inert><a class="btn" data-line role="link" aria-disabled="true" tabindex="0">LINEで貸出条件を確認する</a></div>
+  <div id="line-status" class="status-toast" role="status" aria-live="polite"></div>
+</body>
+</html>

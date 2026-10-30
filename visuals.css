@@ -1,0 +1,77 @@
+/* v4: 写真・挿絵と本文図解の配置。商品条件と共通デザインは変更しない。 */
+:root{
+ --visual-gap:64px;
+ --visual-caption:12px;
+ --vignette-width:204px;
+}
+.hero{align-items:center}
+.visual-hero-aside{padding:0;min-width:0}
+.primary-visual{margin:0}
+.primary-visual img{width:100%;height:auto}
+.loan-primary-visual img{aspect-ratio:1/1.06;object-fit:cover;object-position:63% 50%}
+.primary-visual figcaption{font-size:var(--visual-caption);line-height:1.7;color:var(--muted);margin-top:12px}
+.loan-primary-visual figcaption{border-top:1px solid var(--line);padding-top:12px}
+.lending-primary-visual img{mix-blend-mode:multiply}
+.lending-primary-visual figcaption{text-align:right}
+.loan-mechanism{padding-block:64px}
+.loan-mechanism h2{font-size:28px;margin-bottom:36px}
+.loan-mechanism-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--visual-gap);align-items:center}
+.loan-mechanism .flow{display:block}
+.loan-mechanism .flow-step{margin-left:4px;padding:0 0 24px 24px;border-left:1px solid var(--line)}
+.loan-mechanism .flow-step:last-child{padding-bottom:0;border-left-color:transparent}
+.loan-mechanism .flow-step:before{content:'';position:absolute;width:7px;height:7px;left:-4px;top:9px;background:var(--green);border-radius:50%}
+.loan-mechanism .flow-step:not(:last-child):after{content:none}
+.loan-mechanism .flow-step h3{font-size:18px;margin-bottom:7px}
+.loan-mechanism .flow-step p{font-size:16px;line-height:1.85}
+.mechanism-description>.note{margin-top:24px}
+.loan-mechanism .loan-map{padding:30px 32px}
+.lending-mechanism{background:var(--white);border-block:1px solid var(--line)}
+.lending-mechanism-heading{display:grid;grid-template-columns:1fr 1fr;gap:var(--visual-gap);margin-bottom:40px;align-items:baseline}
+.lending-mechanism-heading p{font-size:16px}
+.lending-mechanism .lending-journey{background:transparent;padding:0;border:0;display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:40px;row-gap:28px}
+.lending-mechanism .journey-title{grid-column:1/-1;margin:0;color:var(--muted);font-size:13px;font-weight:400}
+.lending-mechanism .journey-node,.lending-mechanism .journey-period{margin:0;padding:22px 0 0;border:0;border-top:1px solid #759080;position:relative}
+.lending-mechanism .journey-node:before,.lending-mechanism .journey-period:before{content:'';position:absolute;width:9px;height:9px;background:var(--green);border-radius:50%;left:0;top:-5px}
+.lending-mechanism .journey-node p{font-size:16px;line-height:1.85}
+.lending-mechanism .journey-period p{font-size:14px;line-height:1.85}
+.lending-mechanism .lending-journey>.note{grid-column:1/-1;border:0;margin:0;padding:0}
+.lending-risk-section{background:var(--wash);border-top:0}
+.process-heading{display:flex;justify-content:space-between;align-items:center;gap:28px;margin-bottom:26px}
+.process-heading h2{flex:1;min-width:0}
+.process-vignette{width:var(--vignette-width);flex:none}
+.process-vignette img{width:100%;height:auto;mix-blend-mode:multiply}
+@media(max-width:1050px){:root{--visual-gap:36px;--vignette-width:180px}.loan-mechanism h2{font-size:26px}.loan-mechanism .loan-map{padding:26px}.lending-mechanism .lending-journey{column-gap:28px}.lending-mechanism .journey-node strong{font-size:22px}}
+@media(max-width:800px){.loan-primary-visual img{aspect-ratio:1/1.16}.loan-mechanism-layout{grid-template-columns:1.15fr 1fr;gap:28px}.loan-mechanism .loan-map{padding:24px}.lending-mechanism .lending-journey{column-gap:24px}.lending-mechanism .journey-node strong{font-size:21px}.lending-mechanism .journey-node p{font-size:15px}}
+@media(max-width:700px){
+ :root{--visual-gap:28px;--vignette-width:130px}
+ .hero{gap:28px}
+ .loan-primary-visual img{aspect-ratio:16/10;object-fit:cover;object-position:50% 52%}
+ .primary-visual figcaption{margin-top:9px;font-size:12px}
+ .loan-primary-visual figcaption{padding-top:9px}
+ .lending-primary-visual{max-width:350px;margin-inline:auto}
+ .lending-primary-visual img{max-height:240px;object-fit:contain}
+ .lending-primary-visual figcaption{text-align:left}
+ .loan-mechanism{padding-block:40px}
+ .loan-mechanism h2{font-size:25px;margin-bottom:28px;text-wrap:balance}
+ .loan-mechanism-layout{display:block}
+ .loan-mechanism .flow-step{padding:0 0 24px 22px}
+ .loan-mechanism .flow-step h3{font-size:17px}
+ .loan-mechanism .flow-step p{font-size:16px}
+ .mechanism-description>.note{margin-top:20px}
+ .loan-mechanism .loan-map{margin-top:28px;padding:24px}
+ .lending-mechanism-heading{display:block;margin-bottom:26px}
+ .lending-mechanism-heading h2{font-size:26px}
+ .lending-mechanism-heading p{margin-top:14px;font-size:16px}
+ .lending-mechanism .lending-journey{display:block}
+ .lending-mechanism .journey-title{margin-bottom:26px}
+ .lending-mechanism .journey-node,.lending-mechanism .journey-period{margin-left:4px;border:0;border-left:1px solid #759080;padding:0 0 28px 24px}
+ .lending-mechanism .journey-node:last-of-type{border-left-color:transparent;padding-bottom:0}
+ .lending-mechanism .journey-node:before,.lending-mechanism .journey-period:before{left:-5px;top:8px}
+ .lending-mechanism .journey-node strong{font-size:23px}
+ .lending-mechanism .journey-node p{font-size:16px}
+ .lending-mechanism .journey-period strong{font-size:36px}
+ .lending-mechanism .lending-journey>.note{border-top:1px solid var(--line);margin-top:24px;padding-top:18px}
+ .process-heading{gap:14px;margin-bottom:22px}
+ .process-heading h2{font-size:26px;line-height:1.65}
+}
+@media(max-width:360px){:root{--vignette-width:112px}.process-heading h2{font-size:24px}.loan-mechanism h2{font-size:23px}}

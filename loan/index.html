@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#F7F8F5"><meta name="description" content="BTCを担保に日本円を借りるサービス。借入条件、満期返済の仕組みと概算を確認できます。制作プレビュー。"><title>BTC担保ローン｜制作プレビュー</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../visuals.css"><script src="../site-config.js" defer></script><script src="config.js" defer></script><script src="calculator.js" defer></script><script src="loan.js" defer></script><script src="../site.js" defer></script></head>
+<body><a class="skip-link" href="#main">本文へ移動</a>
+<header class="site-header" id="top"><div class="container header-inner"><a class="brand" href="#top"><span data-service-name>BTC担保ローン</span><small data-provisional>仮称</small></a><nav class="header-nav" aria-label="ページ内"><a href="#mechanism">仕組み</a><a href="#terms">借入条件</a><a href="#faq">よくある質問</a></nav><a class="btn btn-small header-cta" data-line role="link" aria-disabled="true" tabindex="0">LINEで確認</a></div></header>
+<main id="main">
+<section class="hero container" aria-labelledby="hero-title">
+ <div class="hero-copy">
+  <p class="eyebrow">ビットコイン担保融資</p>
+  <h1 id="hero-title"><span>BTCを担保に、</span><span>資金は日本円で。</span></h1>
+  <p class="hero-lead">保有するビットコインを、資金調達の選択肢に。月々の利払いは不要。元金・利息は満期にまとめて返済。</p>
+  <dl class="hero-terms">
+   <div class="rate-term"><dt>実質年率</dt><dd><span data-rate-range>4.0–8.0</span><small>%</small></dd></div>
+   <div><dt>借入額</dt><dd><small>原則</small> <span data-min-man>500</span><small>万円から</small></dd></div>
+   <div><dt>借入上限</dt><dd><small>担保評価額の</small><span data-ltv>50</span><small>%</small></dd></div>
+  </dl>
+  <p class="contract-note">契約期間 <span data-term-years>1年</span> ／ 審査・条件あり</p>
+  <a class="btn hero-cta" data-line role="link" aria-disabled="true" tabindex="0">LINEで借入条件を確認する</a>
+  <p class="hero-note" data-line-note>プレビュー：LINEへの移動は無効です。</p>
+  <p class="hero-risk">利息は発生します。価格下落時には担保処分や不足額の返済が生じる場合があります。</p>
+ </div>
+ <div class="hero-aside visual-hero-aside">
+  <figure class="primary-visual loan-primary-visual">
+   <img src="../assets/loan-still-life-v4.webp" srcset="../assets/loan-still-life-v4-small.webp 768w, ../assets/loan-still-life-v4.webp 1440w" sizes="(max-width:700px) calc(100vw - 40px), (max-width:1184px) 44vw, 484px" width="1440" height="960" alt="淡い石材の上の緑のノート、BTCモチーフとペン" fetchpriority="high">
+   <figcaption>BTCを担保にするサービスのイメージ</figcaption>
+  </figure>
+ </div>
+</section>
+<section class="mechanism loan-mechanism container" id="mechanism" aria-labelledby="mechanism-title">
+ <h2 id="mechanism-title">担保差入れから、満期返済まで</h2>
+ <div class="loan-mechanism-layout"><div class="mechanism-description">
+ <div class="flow">
+  <article class="flow-step"><h3>BTCを担保に差し入れる</h3><p>審査・契約後、保有するBTCを資金調達に活用します。</p></article>
+  <article class="flow-step"><h3>日本円を借りる</h3><p>契約期間は<span data-term-years>1年</span>。月々の元金返済・利払いは不要です。</p></article>
+  <article class="flow-step"><h3>満期に返済する</h3><p>元金・利息を一括返済。希望により、担保BTCでの代物弁済も選べます。</p></article>
+ </div>
+ <p class="note">BTCによる返済は満期時のみ、条件があります。精算に使った分のBTCは減ります。</p>
+ </div>
+ <figure class="loan-map" aria-labelledby="loan-map-title">
+   <figcaption class="map-title" id="loan-map-title">担保評価額と借入上限の関係</figcaption>
+   <div class="map-value"><span>担保評価額の例</span><strong><b data-example-collateral-man>1,000</b><small>万円</small></strong></div>
+   <div class="valuation-track" aria-hidden="true"><span data-ltv-bar></span></div>
+   <div class="map-value loan-limit"><span>借入上限の目安</span><strong><b data-example-loan-man>500</b><small>万円</small></strong></div>
+   <p class="note">担保評価額の<span data-ltv>50</span>%まで。実際の融資には審査・条件があります。</p>
+  </figure>
+ </div>
+</section>
+<section class="section repayment-section" id="repayment"><div class="container">
+ <div class="repayment-head"><h2><span class="phrase">元金と利息は、</span><br>満期に一括。</h2><p>月々の支払いがない分、満期に返す金額を事前に把握しておくことが大切です。</p></div>
+ <div class="payment-line" aria-label="契約期間中は月々の支払い不要、満期に元金と利息を返済">
+  <div class="payment-end">借入時<strong>日本円を受け取る</strong></div>
+  <div class="payment-period">契約期間 <span data-term-years>1年</span><strong>月々の元金返済・利払い不要</strong></div>
+  <div class="payment-end">満期<strong>元金 ＋ 利息</strong></div>
+ </div>
+ <div class="repayment-options">
+  <article class="repayment-option"><h3><span class="currency-label" aria-hidden="true">円</span>日本円で返済</h3><p>満期に、借入元金と発生した利息を日本円で支払います。</p></article>
+  <article class="repayment-option"><h3><span class="currency-label" aria-hidden="true">BTC</span>担保BTCで代物弁済</h3><p>満期時に希望する場合、担保BTCを返済に使う方法を選択できます。</p><p class="note">精算した分のBTCが減ります。換算価格・手数料などの適用条件は、契約前の確認が必要です。</p></article>
+ </div>
+ <p class="repayment-note">利息は契約期間中も発生します。担保BTCから毎月自動的に利息を差し引く仕組みではありません。</p>
+</div></section>
+<section class="section calculator-section" id="calculator"><div class="container">
+ <div class="calculator-heading"><h2>借入・返済の概算</h2><p>契約期間 <span data-term-years>1年</span>（<span data-term-days>365</span>日）／手数料を含まない単純計算</p></div>
+ <div class="calculator-wrap"><form class="calc-form" id="calculator-form" novalidate><div><label class="field-label" for="collateral">担保評価額</label><div class="input-wrap"><input id="collateral" name="collateral" type="text" inputmode="numeric" autocomplete="off" value="10,000,000" aria-describedby="collateral-error"><span>円</span></div><p class="field-error" id="collateral-error" aria-live="polite"></p></div><div><label class="field-label" for="loan">借入希望額</label><div class="input-wrap"><input id="loan" name="loan" type="text" inputmode="numeric" autocomplete="off" value="5,000,000" aria-describedby="loan-error"><span>円</span></div><p class="field-error" id="loan-error" aria-live="polite"></p></div><div><label class="field-label" for="rate"><span>年率</span><output id="rate-value" for="rate">6.0<span>%</span></output></label><input id="rate" name="rate" type="range" min="4" max="8" step="0.1" value="6" aria-describedby="rate-error"><div class="range-labels"><span data-rate-min>4.0%</span><span data-rate-max>8.0%</span></div><p class="field-error" id="rate-error" aria-live="polite"></p></div></form><div class="calc-results" aria-live="polite" aria-atomic="true"><p class="eyebrow">概算結果</p><dl><div class="result-row"><dt>借入上限の目安</dt><dd><span id="result-limit">5,000,000</span><small>円</small></dd></div><div class="result-row"><dt>概算利息</dt><dd><span id="result-interest">300,000</span><small>円</small></dd></div><div class="result-row total"><dt>満期時の元利合計</dt><dd><span id="result-total">5,300,000</span><small>円</small></dd></div></dl><p id="result-message">借入500万円・年率6.0%の場合</p><p class="note">手数料を含まない単純計算です。</p></div></div>
+ <p class="calculator-footnote">借入上限＝担保評価額×<span data-ltv>50</span>%。利息＝借入額×年率×<span data-term-days>365</span>日÷365日（1円未満は四捨五入）。BTCのリアルタイム価格は使用しません。概算であり、融資・適用金利を保証するものではありません。</p>
+ <div class="inline-cta"><p>実際に適用される金利・返済条件をご確認ください。</p><a class="btn" data-line role="link" aria-disabled="true" tabindex="0">LINEで借入条件を確認する</a></div>
+</div></section>
+<section class="section container" id="terms"><div class="information-grid">
+ <div class="information-heading"><h2>貸付条件</h2><p>審査・契約前に、実際に適用される条件をご確認ください。</p></div>
+ <div><dl class="terms-list"><div><dt>担保</dt><dd>ビットコイン（BTC）</dd></div><div><dt>融資通貨</dt><dd>日本円</dd></div><div><dt>金利／実質年率</dt><dd><span data-rate-range>4.0–8.0</span>%</dd></div><div><dt>最低借入額</dt><dd>原則<span data-min-man>500</span>万円から</dd></div><div><dt>借入上限</dt><dd>担保評価額の<span data-ltv>50</span>%まで</dd></div><div><dt>契約期間</dt><dd><span data-term-years>1年</span></dd></div><div><dt>返済方法</dt><dd>元金・利息を満期に一括返済。月々の元金返済・利払いは不要。</dd></div><div><dt>担保BTCでの返済</dt><dd>満期時のみ、希望により代物弁済を選択可能。<span class="note">精算に使った分のBTCは減ります。適用には条件があります。</span></dd></div><div><dt>担保処分・不足額</dt><dd>価格下落時には担保処分や不足額の返済が生じる場合があります。<span class="note">清算基準・評価方法などの詳細は確認が必要です。</span></dd></div><div><dt>審査・その他の条件</dt><dd>審査・条件があります。手数料、対象者、融資までの日数などは未確定です。</dd></div></dl><aside class="risk-strip"><h3>価格下落時のリスク</h3><p>担保処分によりBTCが減り、不足額の返済が必要になる場合があります。清算基準・評価方法・通知手順は確認が必要です。</p></aside></div>
+</div></section>
+<section class="section process-section container" id="process">
+ <div class="section-heading process-heading"><h2><span class="phrase">LINEから</span><span class="phrase">融資まで</span></h2>
+  <figure class="process-vignette"><img src="../assets/conditions-editorial-v4-small.webp" width="768" height="576" alt="" loading="lazy" decoding="async"></figure>
+ </div>
+ <ol class="process-list" id="process-steps"></ol>
+ <p class="note">手続きの詳細・順序は確認中です。LINEの追加だけで融資や契約は成立しません。</p>
+</section>
+<section class="section faq-section container" id="faq"><div class="information-grid">
+ <div class="information-heading"><h2>よくある質問</h2></div>
+ <div class="faq-list">
+  <details><summary>月々の支払いはありますか？</summary><p>月々の元金返済・利払いは不要です。利息は発生し、元金とともに満期に返済します。</p></details>
+  <details><summary>満期には何を返済しますか？</summary><p>借入元金と、契約期間中に発生した利息を一括で返済します。適用金利やその他の費用は契約条件をご確認ください。</p></details>
+  <details><summary>担保のBTCで返済できますか？</summary><p>満期時のみ、希望により代物弁済を選択できます。使った分のBTCは減ります。換算価格や手数料など、詳細条件の確認が必要です。</p></details>
+  <details><summary>BTCの価格が下がった場合は？</summary><p>担保処分や不足額の返済が生じる場合があります。具体的な清算基準は未提供のため、数値を掲載していません。</p></details>
+  <details><summary>LINEを追加すると契約になりますか？</summary><p>追加だけでは契約は成立しません。条件・必要書類の案内を受け、審査・契約を経て担保差入れ・融資へ進みます。</p></details>
+ </div>
+</div></section>
+<section class="final-cta"><div class="container final-inner">
+ <div><h2>LINEで借入条件を確認</h2><p>金利、借入額、満期の返済方法をご確認ください。<br>融資には審査・条件があります。</p></div>
+ <div class="final-action"><a class="btn" data-line role="link" aria-disabled="true" tabindex="0">LINEで借入条件を確認する</a><p class="note" data-line-note>プレビュー：LINEへの移動は無効です。</p></div>
+</div></section>
+</main><footer class="site-footer"><div class="container"><p class="footer-title">運営情報</p><p class="note">制作プレビューです。正式名称・運営情報は、提供後に差し替えます。</p><dl class="operator-info"><div><dt>運営会社</dt><dd data-operator="company">未提供（差し替え予定）</dd></div><div><dt>連絡先</dt><dd data-operator="contact">未提供（差し替え予定）</dd></div><div><dt>該当する登録情報</dt><dd data-operator="registration">未提供（差し替え予定）</dd></div></dl><div class="footer-links"><span data-policy="privacyUrl">プライバシーポリシー：未提供</span><span data-policy="termsUrl">利用規約：未提供</span><a href="../lending/">BTCレンディングのページ</a></div><div class="footer-bottom"><span>制作プレビュー／正式サービス公開前</span><a class="back-top" href="#top">ページ上部へ ↑</a></div></div></footer><div class="mobile-dock" inert><a class="btn" data-line role="link" aria-disabled="true" tabindex="0">LINEで借入条件を確認する</a></div><div id="line-status" class="status-toast" role="status" aria-live="polite"></div></body></html>
